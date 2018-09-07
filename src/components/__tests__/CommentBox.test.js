@@ -21,10 +21,12 @@ it('have form', () => {
   expect(component.exists('form')).toBeTruthy();
 });
 
-it('have submit button and textarea', () => {
+it('have submit button, fetch button and textarea', () => {
   expect(component.find('textarea').length).toEqual(1);
-  expect(component.find('button').length).toEqual(1);
-  expect(component.find('button').html()).toMatch('Submit');
+  expect(component.find('#submit').length).toEqual(1);
+  expect(component.find('#submit').html()).toMatch('Submit');
+  expect(component.find('#fetch').length).toEqual(1);
+  expect(component.find('#fetch').html()).toMatch('Fetch');
 });
 
 describe('textarea', () => {
