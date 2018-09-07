@@ -1,7 +1,7 @@
 import React from 'react';
 import {mount} from 'enzyme';
 import CommentList from 'components/CommentList';
-import Root from 'Roots';
+import Root from 'root';
 
 let component;
 const initialComments = ['test1', 'test2']
