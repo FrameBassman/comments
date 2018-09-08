@@ -5,7 +5,7 @@ export function commentReducer(state = [], action) {
     case SAVE_COMMENT:
       return [...state, action.payload];
     case FETCH_COMMENTS:
-      const data = action.payload.data;
+      const data = action.payload.data.slice(0, 5);
       const comments = data.map(comment => comment.name);
       return [...state, ...comments];
     default:
