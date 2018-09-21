@@ -4,7 +4,6 @@ import moxios from 'moxios';
 import {commentsUrl} from 'actions/urls';
 import Root from 'root';
 import App from 'components/App';
-import axios from 'axios';
 
 beforeEach(() => {
   moxios.install();
